@@ -2,6 +2,8 @@
 
 A modern social media application built with Next.js, Clerk, Prisma, and TypeScript.
 
+Live Demo: [https://socially-a7mdmo74.vercel.app/](https://socially-a7mdmo74.vercel.app/)
+
 ## Features
 
 - User authentication with Clerk
