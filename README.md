@@ -1,36 +1,65 @@
-<h1 align="center">✨ Next.js Full Course - Build a Social App ✨</h1>
+# Socially - Social Media Application
 
-![Demo App](/public/screenshot-for-readme.png)
+A modern social media application built with Next.js, Clerk, Prisma, and TypeScript.
 
-[Watch Full Tutorial on Youtube](https://youtu.be/vUYopHWOURg)
+## Features
 
-Highlights:
+- User authentication with Clerk
+- Real-time updates
+- Image uploads with UploadThing
+- Dark/Light theme support
+- Responsive design
+- Database management with Prisma and Neon
 
-- 🚀 Tech stack: Next.js App Router, Postgres, Prisma, Clerk & TypeScript
-- 💻 Server Components, Layouts, Route Handlers, Server Actions
-- 🔥 loading.tsx, error.tsx, not-found.tsx
-- 📡 API Integration using Route Handlers
-- 🔄 Data Fetching, Caching & Revalidation
-- 🎭 Client & Server Components
-- 🛣️ Dynamic & Static Routes
-- 🎨 Styling with Tailwind & Shadcn
-- 🔒 Authentication & Authorization
-- 📤 File Uploads with UploadThing
-- 🗃️ Database Integration with Prisma
-- 🚀 Server Actions & Forms
-- ⚡ Optimistic Updates
+## Tech Stack
 
-### Setup .env file
+- **Frontend**: Next.js 14, React 18, TailwindCSS
+- **Authentication**: Clerk
+- **Database**: Neon (Serverless Postgres)
+- **ORM**: Prisma
+- **Styling**: Radix UI, TailwindCSS
+- **File Upload**: UploadThing
+- **Date Handling**: date-fns
+- **Icons**: Lucide React
 
-```js
+## Getting Started
+
+1. Clone the repository
+2. Install dependencies:
+
+npm install
+
+3. Set up environment variables:
+
+# Create a .env file and add your credentials
+
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
 CLERK_SECRET_KEY=
-DATABASE_URL=
-UPLOADTHING_TOKEN=
-```
+DATABASE_URL=postgresql://user:password@neon.tech/database
+UPLOADTHING_SECRET=
+UPLOADTHING_APP_ID=
 
-### Run the app
+4. Run database migrations:
 
-```shell
+npx prisma generate
+npx prisma db push
+
+5. Start the development server:
+
 npm run dev
-```
+
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run linting
+- `npm run postinstall` - Generate Prisma client
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License.
